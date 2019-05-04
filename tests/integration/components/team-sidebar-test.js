@@ -12,15 +12,13 @@ module('Integration | Component | team-sidebar', function(hooks) {
 
     await render(hbs`<TeamSidebar />`);
 
-    assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      <TeamSidebar>
-        template block text
-      </TeamSidebar>
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.deepEqual(this.element.textContent.trim()
+      .replace(/\s*\n+\s*/g, '\n').split('\n'), [
+        "Mike North",
+        "Channels",
+        "#",
+        "general",
+        "Logout"
+      ]);
   });
 });
