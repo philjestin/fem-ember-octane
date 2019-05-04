@@ -1,0 +1,24 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "/Users/motiion/Github/js-inverviews"
+    }
+  ],
+  "settings": {
+    "editor.tabSize": 2
+  },
+  "extensions": {
+    "recommendations": [
+      "lifeart.vscode-ember-unstable",
+      "msjsdiag.debugger-for-chrome",
+      "dbaeumer.vscode-eslint",
+      "aaron-bond.better-comments",
+      "esbenp.prettier-vscode",
+      "humao.rest-client",
+      "auchenberg.vscode-browser-preview"
+    ]
+  }
+}
